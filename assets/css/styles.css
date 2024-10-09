@@ -83,10 +83,30 @@ body {
 
 .main__table {
     width: 100%;
+    margin-right: 100px;
+        
+    display: flex;
+    justify-content: start;
+}
+
+.table__table {
     margin-top: 50px;
-    padding: 0 100px;
+    padding: 0px;
 }
 
 .body__row {
     border-bottom: 1px solid #E5E7EB;
+
+}
+
+.row__header {
+    width: 210px;
+    height: 30px;
+    padding: 2px 10px;
+    
+    background-color: #E5E7EB;
+    border-bottom: 1px solid #4D556233;
+    color: #121826;
+    font-size: 1rem;
+    font-weight: 600;
 }
