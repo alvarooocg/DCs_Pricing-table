@@ -26,7 +26,8 @@ body {
 
     border: 1px solid #E5E7EB;
 
-    background: url('../dccl--html-css-price-table/dccl--html-css-price-table/sand-background-image.png');
+    background: url('../img/dccl--html-css-price-table/sand-background-image@2x.png');
+    background-color: #F8FAFC;
 }
 
 .header__title {
@@ -49,18 +50,20 @@ body {
 .main {
     width: 100%;
     height: 100%;
-}
 
-.main__prices {
     display: flex;
     justify-content: center;
-    gap: 110px;
+}
 
-    padding-top: 100px;
+.main__table {
+    margin-bottom: 100px;
 }
 
 .prices__item {
     text-align: center;
+
+    padding: 0px;
+    padding-top: 30px;
 }
 
 .item__type {
@@ -88,8 +91,7 @@ body {
 }
 
 .main__table {
-    width: 100%;
-    margin-right: 100px;
+    width: 90%;
         
     display: flex;
     justify-content: center;
@@ -103,7 +105,7 @@ body {
 }
 
 .body__row {
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom-left-radius: 10px;
 }
 
 th, td {
@@ -137,10 +139,78 @@ th, td {
 }
 
 .data__image {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .row__data {
     text-align: center;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.main__getStarted {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.getStarted__data {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.data__container {
+    width:max-content;
+
+    display: flex;
+    align-items: center;
+}
+
+.data__text {
+    color: #3662E3;
+}
+
+/*
+    .popular
+*/
+
+.prices__item.popular {
+    background-color: #121826;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.prices__item.popular > .item__type {
+    background-color: #3662E3;
+    color: white;
+    border-radius: 10px;
+
+    width: 30%;
+    margin: 0 auto;
+}
+
+.prices__item.popular > .item__price {
+    color: white;
+}
+
+.prices__item.popular > .item__time {
+    color: white;
+}
+
+.getStarted__data.popular {
+    background-color: #E9A23B;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.row__data.popular {
+    background-color: #121826;
+    border: none;
+    color: white;
+}
+
+.getStarted__data.popular > .data__container > .data__text {
+    color: white;
 }
