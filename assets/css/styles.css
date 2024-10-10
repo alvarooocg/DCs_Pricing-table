@@ -25,6 +25,8 @@ body {
     align-items: center;
 
     border: 1px solid #E5E7EB;
+
+    background: url('../dccl--html-css-price-table/dccl--html-css-price-table/sand-background-image.png');
 }
 
 .header__title {
@@ -81,22 +83,31 @@ body {
     color: #4D5562;
 }
 
+.last-item {
+    margin-bottom: 30px;
+}
+
 .main__table {
     width: 100%;
     margin-right: 100px;
         
     display: flex;
-    justify-content: start;
+    justify-content: center;
 }
 
 .table__table {
     margin-top: 50px;
     padding: 0px;
+
+    border-collapse: collapse;
 }
 
 .body__row {
     border-bottom: 1px solid #E5E7EB;
+}
 
+th, td {
+    padding: 12px 80px;
 }
 
 .row__header {
@@ -106,7 +117,30 @@ body {
     
     background-color: #E5E7EB;
     border-bottom: 1px solid #4D556233;
+
     color: #121826;
     font-size: 1rem;
     font-weight: 600;
+    text-align: start;
+}
+
+.no-border {
+    border: none;
+}
+
+.first {
+    border-top-left-radius: 10px;
+}
+
+.last {
+    border-bottom-left-radius: 10px;
+}
+
+.data__image {
+    width: 10px;
+    height: 10px;
+}
+
+.row__data {
+    text-align: center;
 }
